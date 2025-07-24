@@ -4,47 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Laboratorio de Procesamiento de Imágenes</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      background-color: #f8f8f8;
-    }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav {
-      background-color: #34495e;
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background-color: #1abc9c;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-  </style>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
@@ -58,6 +18,7 @@
     <a href="#mision">Misión</a>
     <a href="#equipo">Equipo</a>
     <a href="#proyectos">Proyectos</a>
+    <a href="#publicaciones">Publicaciones</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
@@ -73,13 +34,39 @@
 
   <section id="equipo">
     <h2>Equipo</h2>
-    <p>El laboratorio está conformado por investigadores, estudiantes de pre y postgrado, y colaboradores externos. <br>Puedes incluir aquí imágenes o mini bios.</p>
-    <ul>
-    <li><a href="equipo/persona1.html"><strong>Dr. Claudio A. Pérez</strong></a> – Director del laboratorio.</li>
-    <li><a href="equipo/persona2.html"><strong>Cristóbal Gallardo</strong></a> – Investigador en Deep Learning.</li>
-    <li><a href="equipo/persona3.html"><strong>Gabriel Cubillos</strong></a> – Investigador en Betano.com.</li>
+    <p>El laboratorio está conformado por investigadores, estudiantes de pre y postgrado, y colaboradores externos. </p>
+    <div class="equipo-grid">
+    
+      <!-- Persona 1 -->
+      <div class="miembro">
+        <a href="equipo/persona1.html">
+          <img src="img/claudio_perez.jpg" alt="Foto de Claudio A. Pérez">
+          <h3>Dr. Claudio A. Pérez</h3>
+          <p class="cargo">Director del Laboratorio</p>
+        </a>
+      </div>
 
-  </ul>
+      <!-- Persona 2 -->
+      <div class="miembro">
+        <a href="equipo/persona2.html">
+          <img src="img/juan_pablo_perez.jpg" alt="Foto de Juan Pablo Perez">
+          <h3>Dr. Juan Pablo Pérez</h3>
+          <p class="cargo">Investigador Post-Doctoral</p>
+        </a>
+      </div>
+
+      <!-- Persona 2 -->
+      <div class="miembro">
+        <a href="equipo/persona2.html">
+          <img src="img/juan_pablo_perez.jpg" alt="Foto de Juan Pablo Perez">
+          <h3>Dr. Juan Pablo Pérez</h3>
+          <p class="cargo">Investigador Post-Doctoral</p>
+        </a>
+      </div>
+
+    <!-- Agrega más personas aquí -->
+
+    </div>
   </section>
 
   <section id="proyectos">
@@ -88,7 +75,15 @@
     <li><a href="proyectos/proyecto1.html"><strong>Detección de cáncer en imágenes histopatológicas</strong></a> – En colaboración con el Departamento de Medicina.</li>
     <li><a href="proyectos/proyecto2.html"><strong>Segmentación automática de objetos</strong></a> – Uso de deep learning y redes convolucionales.</li>
   </ul>
-</section>
+  </section>
+
+  <section id="publicaciones">
+  <h2>Publicaciones</h2>
+  <ul>
+    <li><a href="proyectos/proyecto1.html"><strong>Detección de cáncer en imágenes histopatológicas</strong></a> – En colaboración con el Departamento de Medicina.</li>
+    <li><a href="proyectos/proyecto2.html"><strong>Segmentación automática de objetos</strong></a> – Uso de deep learning y redes convolucionales.</li>
+  </ul>
+  </section>
 
 
   <section id="contacto">
