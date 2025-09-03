@@ -1,3 +1,4 @@
+/* === General ===*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -40,83 +41,222 @@ body {
 a:visited {
   color: lightblue;           /* mismo color que el normal para evitar morado */
 }
+/* == Portada ==*/
+.portada {
+  background-image: url('../img/Team/members.jpeg'); /* Cambia esto por tu ruta */
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh; /* 450px; /* 100vh; /* O ajusta según lo que necesites */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.portada h1 {
+  font-size: 3em;
+  margin-top: 55vh;
+  color: whitesmoke;
+}
 
-  section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-    background-color: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
-  }
+.portada h2 {
+  font-size: 1.25em;
+  margin-top: -2em;
+}
 
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  background-color: white;
+  margin: auto auto 20px;
+  border-radius: 8px;
+}
 
-  /* === NUEVO: Estilo para la grilla de equipo === */
-  .equipo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-  }
+section h1{
+    font-size: 2em;
+}
+section h2{
+    font-size: 1.5em
+}
 
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+/* === Equipo === */
+.equipo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.miembro {
+  background-color: #fff;
+  width: 30%;
+  min-width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.miembro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.miembro img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.miembro h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.miembro .cargo {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.miembro a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+/*== Personas Iconos ==*/
+.imagen-persona{
+  max-width: 300px;
+  height: auto;
+}
+
+.img-ico{
+  max-width: 50px;
+  height: auto;
+}
+/*=== Galeria ===*/
+.student-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  background-color: white;
+  margin: auto auto 20px;
+  border-radius: 8px;
+}
+
+.student-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.student-profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3498db;
+}
+
+.student-info {
+  flex: 1;
+}
+
+.student-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.student-message {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.student-details {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.swiper{
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f8f8f8; /* Color de fondo para las barras si sobran */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: #3498db;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #3498db;
+}
+
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 900px) {
   .miembro {
-    background-color: #fff;
-    width: 30%;
-    min-width: 200px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    width: 45%;
   }
+}
 
-  .miembro:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-
-  .miembro img {
+@media (max-width: 600px) {
+  .miembro {
     width: 100%;
-    height: auto;
-    max-width: 150px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
+  }
+}
+
+@media (max-width: 768px) {
+  .student-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .miembro h3 {
-    margin: 10px 0 5px;
-    font-size: 18px;
-    color: #2c3e50;
+  .student-profile img {
+    margin-bottom: 1rem;
   }
-
-  .miembro .cargo {
-    font-size: 14px;
-    color: #555;
-    margin: 0;
-  }
-
-  .miembro a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-
-  /* Responsive para pantallas más pequeñas */
-  @media (max-width: 900px) {
-    .miembro {
-      width: 45%;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .miembro {
-      width: 100%;
-    }
-  }
+}

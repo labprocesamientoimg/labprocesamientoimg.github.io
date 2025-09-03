@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Graduación</title>
+
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" href="../img/misc/ico.png" type="image/png">
+</head>
+<body>
+  <header>
+    <h1>Fotos Graduaciones</h1>
+    <nav><a href="../index.html">← Volver al inicio</a></nav>
+  </header>
+
+  <section class="student-section">
+    <div class="student-card">
+      <div class="student-profile">
+        <img src="../img/Team/Cristobal_Gallardo.jpg" class="imagen-persona" alt="Cristobal Gallardo">
+        <div class="student-info">
+          <h3 class="student-name">Cristóbal Gallardo</h3>
+          <p class="student-message">"Gracias por este viaje inolvidable."</p>
+          <ul class="student-details">
+            <li><strong>Carrera:</strong> Magíster en Ciencia de Datos</li>
+            <li><strong>Titulación:</strong> 2025</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../img/grad/CG/cg1.jpeg" alt="Foto 0 de Cristobal Gallardo"></div>
+          <div class="swiper-slide"><img src="../img/grad/CG/cg2.jpeg" alt="Foto 1 de Cristobal Gallardo"></div>
+          <div class="swiper-slide"><img src="../img/grad/CG/cg3.jpeg" alt="Foto 2 de Cristobal Gallardo"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="student-card">
+      <div class="student-profile">
+        <img src="../img/Ex/diego_maureira.jpeg" class="imagen-persona" alt="Diego Maureira">
+        <div class="student-info">
+          <h3 class="student-name">Diego Maureira</h3>
+          <p class="student-message">"Gracias por este viaje inolvidable."</p>
+          <ul class="student-details">
+            <li><strong>Carrera:</strong> Magíster en Ingeniería Eléctrica</li>
+            <li><strong>Titulación:</strong> 2025</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../img/grad/DM/grad_dm0.jpeg" alt="Foto 0 de Diego Maureira"></div>
+          <div class="swiper-slide"><img src="../img/grad/DM/grad_dm1.jpeg" alt="Foto 1 de Diego Maureira"></div>
+          <div class="swiper-slide"><img src="../img/grad/DM/grad_dm2.jpeg" alt="Foto 2 de Diego Maureira"></div>
+          <div class="swiper-slide"><img src="../img/grad/DM/grad_dm3.jpeg" alt="Foto 3 de Diego Maureira"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="student-card">
+      <div class="student-profile">
+        <img src="../img/Team/JZ.jpeg" class="imagen-persona" alt="Jorge Zambrano">
+        <div class="student-info">
+          <h3 class="student-name">Jorge Zambrano</h3>
+          <p class="student-message">"..éter querido, éter amado, he terminado .."</p>
+          <ul class="student-details">
+            <li><strong>Carrera:</strong> Doctorado en Ingeniería Eléctrica</li>
+            <li><strong>Generación:</strong> 2024</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../img/grad/JZ/JZ_grad1.jpeg" alt="Foto 0 de Jorge Zambrano"></div>
+          <div class="swiper-slide"><img src="../img/grad/JZ/JZ_grad2.jpeg" alt="Foto 1 de Jorge Zambrano"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.swiper').forEach((swiperEl) => {
+        new Swiper(swiperEl, {
+          loop: true,
+          pagination: {
+            el: swiperEl.querySelector('.swiper-pagination'),
+            clickable: true,
+          },
+          navigation: {
+            nextEl: swiperEl.querySelector('.swiper-button-next'),
+            prevEl: swiperEl.querySelector('.swiper-button-prev'),
+          },
+          spaceBetween: 20,
+        });
+      });
+    });
+  </script>
+</body>
+</html>
