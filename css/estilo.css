@@ -268,12 +268,12 @@ main {
   }
   .portada h1 {
     font-size: 2em;
-    margin-top: 40vh;
+    /*==margin-top: 40vh;==*/
   }
 
   .portada h2 {
     font-size: 1em;
-    margin-top: -1em;
+    /*==margin-top: -1em;==*/
   }
 }
 
@@ -283,11 +283,11 @@ main {
   }
   .portada h1 {
     font-size: 1.5em;
-    margin-top: 30vh;
+    /*==margin-top: 30vh;==*/
   }
 
   .portada h2 {
     font-size: 0.9em;
-    margin-top: -0.5em;
+    /*==margin-top: -0.5em;==*/
   }
 }
