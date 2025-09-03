@@ -284,6 +284,7 @@ main {
   }
   .portada h1 {
     font-size: 1.4em;
+      margin-top: 60vh;
   }
 
   .portada h2 {
