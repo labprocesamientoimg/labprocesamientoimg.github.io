@@ -47,7 +47,7 @@ a:visited {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 75vh; /* 450px; /* 100vh; /* O ajusta según lo que necesites */
+  height: 75vh;
   display: block;
   align-items: center;
   justify-content: center;
@@ -263,6 +263,9 @@ main {
 
 /* Ajustes para portada en móviles */
 @media (max-width: 768px) {
+  .portada {
+      background-size: 80%;
+  }
   .portada h1 {
     font-size: 2em;
     margin-top: 40vh;
@@ -275,6 +278,9 @@ main {
 }
 
 @media (max-width: 480px) {
+  .portada {
+    background-size: 80%;
+  }
   .portada h1 {
     font-size: 1.5em;
     margin-top: 30vh;
