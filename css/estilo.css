@@ -48,24 +48,21 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   height: 75vh;
-  display: flex;
-  flex-direction: column;
+  display: block;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   color: white;
   text-align: center;
-    padding-top: 50vh;
 }
 .portada h1 {
   font-size: 3em;
-  /*==margin-top: 55vh;==*/
-    margin: 0;
+  margin-top: 55vh;
   color: whitesmoke;
 }
 
 .portada h2 {
   font-size: 1.25em;
-  margin-top: 0.5em;/*==-2em;==*/
+  margin-top: -2em;
 }
 
 section {
@@ -267,32 +264,30 @@ main {
 /* Ajustes para portada en móviles */
 @media (max-width: 768px) {
   .portada {
-      background-size: 80%;
-      padding-top: 35vh;
+      background-size: 100%;
   }
   .portada h1 {
     font-size: 2em;
-
+    margin-top: 40vh;
   }
 
   .portada h2 {
     font-size: 1em;
-
+    margin-top: -1em;
   }
 }
 
 @media (max-width: 480px) {
   .portada {
-    background-size: 80%;
-      padding-top: 25vh;
+    background-size: 100%;
   }
   .portada h1 {
     font-size: 1.5em;
-
+    margin-top: 30vh;
   }
 
   .portada h2 {
     font-size: 0.9em;
-
+    margin-top: -0.5em;
   }
 }
